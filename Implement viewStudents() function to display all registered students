@@ -1,0 +1,9 @@
+// student.cpp (continued)
+void viewStudents() {
+    ifstream file("students.txt");
+    string line;
+    while (getline(file, line)) {
+        cout << line << endl;
+    }
+    file.close();
+}
